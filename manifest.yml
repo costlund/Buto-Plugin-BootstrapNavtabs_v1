@@ -1,0 +1,23 @@
+version: '1.0'
+history:
+  '1.0':
+    date: '2019-07-30'
+    description: 'Manifest created.'
+plugin:
+  -
+    name: wf/embed
+    version: '1.0'
+  -
+    name: wf/ajax
+    version: '1.0'
+sys:
+  -
+    name: mercury
+    version:
+      - '1.0'
+php:
+  - '7.2'
+author: null
+links: null
+description: ''
+third_part_software: null
