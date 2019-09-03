@@ -79,13 +79,14 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
         data-url: /utstillere/kanuts
         class: plugin_bootstrap_navtabs_content
         style: 'display:none'
+      innerHTML:
     -
       type: div
       attribute:
         id: tab_utstillere_settings
-        data-url: /utstillere/settings
         class: plugin_bootstrap_navtabs_content
         style: 'display:none'
+      innerHTML: This content is static.
 -
   type: script
   innerHTML: "PluginBootstrapNavtabs_v1.nav_init({ul: 'my_navtabs', content: 'my_content', click: 0});"

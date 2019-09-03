@@ -49,7 +49,9 @@ function PluginBootstrapNavtabs_v1(){
       /**
        * Load data.
        */
-      PluginWfAjax.load(data_show, data_url);
+      if(data_url){
+        PluginWfAjax.load(data_show, data_url);
+      }
     });
     /**
      * Click on a tab.
