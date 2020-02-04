@@ -35,7 +35,7 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
           type: a
           attribute:
             class: nav-link
-          innerHTML: Utstillinger
+          innerHTML: Home
     -
       type: li
       attribute:
@@ -46,7 +46,7 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
           type: a
           attribute:
             class: nav-link
-          innerHTML: Kanuts
+          innerHTML: Products
     -
       type: li
       attribute:
@@ -67,23 +67,23 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
     -
       type: div
       attribute:
-        id: tab_utstillere_utstillinger
-        data-url: /utstillere/utstillinger
+        id: tab_home
+        data-url: /page/home
         class: plugin_bootstrap_navtabs_content
         style: 'display:none'
       innerHTML:
     -
       type: div
       attribute:
-        id: tab_utstillere_kanuts
-        data-url: /utstillere/kanuts
+        id: tab_products
+        data-url: /page/products
         class: plugin_bootstrap_navtabs_content
         style: 'display:none'
       innerHTML:
     -
       type: div
       attribute:
-        id: tab_utstillere_settings
+        id: tab_settings
         class: plugin_bootstrap_navtabs_content
         style: 'display:none'
       innerHTML: This content is static.
