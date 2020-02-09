@@ -1,8 +1,11 @@
 function PluginBootstrapNavtabs_v1(){
   this.nav_init = function(data){
+    /**
+     * Tab click
+     */
     $('#'+data.ul+' a').click(function (e) {  
       /**
-       * LI index.
+       * Find out which order the LI element has for the button to later handle corresponding DIV element.
        */
       var li_index = -1;
       var nodes = Array.prototype.slice.call( this.parentNode.parentNode.childNodes );
@@ -15,18 +18,20 @@ function PluginBootstrapNavtabs_v1(){
         }
       }
       /**
-       * 
+       * Grab corresponding DIV element.
        */
-      var data_show = null;
+      var div_element = null;
       var data_url = null;
+      var data_onclick = null;
       nodes = document.getElementById(data.content).childNodes;
       var div_index = -1;
       for (i = 0; i < nodes.length; i++) {
         if(nodes[i].tagName=='DIV'){
           div_index++;
           if(div_index==li_index){
-            data_show = nodes[i].id;
+            div_element = nodes[i].id;
             data_url = nodes[i].getAttribute('data-url');
+            data_onclick = nodes[i].getAttribute('data-onclick');
           }
         }
       }
@@ -43,20 +48,29 @@ function PluginBootstrapNavtabs_v1(){
        */
       $('#'+data.content+' .plugin_bootstrap_navtabs_content').hide();
       /**
-       * Show a content div.
+       * Show current content div.
        */
-      $('#'+data_show).show();
+      $('#'+div_element).show();
       /**
-       * Load data.
+       * data_url
        */
       if(data_url){
-        PluginWfAjax.load(data_show, data_url);
+        PluginWfAjax.load(div_element, data_url);
+      }
+      /**
+       * data_onclick
+       */
+      if(data_onclick){
+        eval(data_onclick);
       }
     });
     /**
-     * Click on a tab.
+     * Make a click on a tab.
      */
     document.getElementById(data.ul).getElementsByTagName('a')[data.click].click();
+  }
+  this.onclick_example = function(){
+    alert('PluginBootstrapNavtabs_v1 says: Replace method PluginBootstrapNavtabs_v1.onclick_example() or remove param data-onclick.');
   }
 }
 var PluginBootstrapNavtabs_v1 = new PluginBootstrapNavtabs_v1();

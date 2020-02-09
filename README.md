@@ -86,6 +86,7 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
         id: tab_settings
         class: plugin_bootstrap_navtabs_content
         style: 'display:none'
+        data-onclick: PluginBootstrapNavtabs_v1.onclick_example()
       innerHTML: This content is static.
 -
   type: script
