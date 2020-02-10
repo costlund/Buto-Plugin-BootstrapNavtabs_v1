@@ -46,7 +46,8 @@ function PluginBootstrapNavtabs_v1(){
       /**
        * Hide all content divs.
        */
-      $('#'+data.content+' .plugin_bootstrap_navtabs_content').hide();
+      var subNodes = document.querySelectorAll("#"+data.content+" > *");
+      $(subNodes).hide();
       /**
        * Show current content div.
        */
@@ -74,4 +75,3 @@ function PluginBootstrapNavtabs_v1(){
   }
 }
 var PluginBootstrapNavtabs_v1 = new PluginBootstrapNavtabs_v1();
-
