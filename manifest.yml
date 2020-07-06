@@ -1,5 +1,9 @@
-version: 1.1.0
+version: 1.2.0
 history:
+  1.2.0:
+    date: '2020-07-06'
+    title: 'Tab click'
+    description: 'Add method tab_click'
   1.1.0:
     date: '2020-02-09'
     title: 'Param data-onclick'

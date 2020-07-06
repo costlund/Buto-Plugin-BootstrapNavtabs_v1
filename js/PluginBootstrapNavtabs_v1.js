@@ -73,5 +73,8 @@ function PluginBootstrapNavtabs_v1(){
   this.onclick_example = function(){
     alert('PluginBootstrapNavtabs_v1 says: Replace method PluginBootstrapNavtabs_v1.onclick_example() or remove param data-onclick.');
   }
+  this.tab_click = function(ul_id, tab_number){
+    document.getElementById(ul_id).getElementsByClassName('nav-link')[tab_number].click();
+  }
 }
 var PluginBootstrapNavtabs_v1 = new PluginBootstrapNavtabs_v1();

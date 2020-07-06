@@ -92,3 +92,10 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
   type: script
   innerHTML: "PluginBootstrapNavtabs_v1.nav_init({ul: 'my_navtabs', content: 'my_content', click: 0});"
 ```
+
+
+## Tab click
+Script to click on a tab.
+```
+PluginBootstrapNavtabs_v1.tab_click('_id_of_nav_tabs_', _tab_number_);
+```
