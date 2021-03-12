@@ -1,5 +1,9 @@
-version: 1.2.0
+version: 1.2.1
 history:
+  1.2.1:
+    date: '2021-03-12'
+    title: 'Readme'
+    description: 'Readme improvement.'
   1.2.0:
     date: '2020-07-06'
     title: 'Tab click'

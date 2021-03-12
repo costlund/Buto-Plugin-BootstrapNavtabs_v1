@@ -35,6 +35,7 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
           type: a
           attribute:
             class: nav-link
+            href: '#'
           innerHTML: Home
     -
       type: li
@@ -46,6 +47,7 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
           type: a
           attribute:
             class: nav-link
+            href: '#'
           innerHTML: Products
     -
       type: li
@@ -57,6 +59,7 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
           type: a
           attribute:
             class: nav-link
+            href: '#'
           innerHTML: Settings
 -
   type: div
