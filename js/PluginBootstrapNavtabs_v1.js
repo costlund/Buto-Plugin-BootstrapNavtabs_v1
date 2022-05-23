@@ -51,7 +51,7 @@ function PluginBootstrapNavtabs_v1(){
       /**
        * Show current content div.
        */
-      $('#'+div_element).show();
+      $('#'+data.content+' > #'+div_element).show();
       /**
        * data_url
        */

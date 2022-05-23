@@ -1,5 +1,9 @@
-version: 1.2.1
+version: 1.3.0
 history:
+  1.3.0:
+    date: '2022-05-21'
+    title: 'Content divs'
+    description: 'Fix problem when content divs has same id as other divs.'
   1.2.1:
     date: '2021-03-12'
     title: 'Readme'
