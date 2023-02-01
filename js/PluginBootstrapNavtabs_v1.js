@@ -1,4 +1,5 @@
 function PluginBootstrapNavtabs_v1(){
+  this.data = {nav: []};
   this.nav_init = function(data){
     /**
      * Tab click
@@ -64,16 +65,29 @@ function PluginBootstrapNavtabs_v1(){
       if(data_onclick){
         eval(data_onclick);
       }
+      /**
+       * Set data.nav.
+       */
+      PluginBootstrapNavtabs_v1.data.nav[data.ul] = li_index;
     });
     /**
      * Make a click on a tab.
      */
-    document.getElementById(data.ul).getElementsByTagName('a')[data.click].click();
+    this.tab_click(data.ul, data.click);
   }
   this.onclick_example = function(){
     alert('PluginBootstrapNavtabs_v1 says: Replace method PluginBootstrapNavtabs_v1.onclick_example() or remove param data-onclick.');
   }
   this.tab_click = function(ul_id, tab_number){
+    /**
+     * If data.nav is set.
+     */
+    if(PluginBootstrapNavtabs_v1.data.nav[ul_id]){
+      tab_number = PluginBootstrapNavtabs_v1.data.nav[ul_id];
+    }
+    /**
+     * 
+     */
     document.getElementById(ul_id).getElementsByClassName('nav-link')[tab_number].click();
   }
 }

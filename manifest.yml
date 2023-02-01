@@ -1,5 +1,9 @@
-version: 1.3.0
+version: 1.4.0
 history:
+  1.4.0:
+    date: '2023-02-01'
+    title: 'Last tab'
+    description: 'Click on last clicked tab in method tab_click stored in data.nav.'
   1.3.0:
     date: '2022-05-21'
     title: 'Content divs'
