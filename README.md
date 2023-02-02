@@ -31,8 +31,9 @@ data:
         data-url: (optinal, set this to make an ajax request on tab click)
         data-onclick: (optional, call a method on tab click)
         content: (optional, elements)
+        settings: (optional)
+          enabled: true
 ```
-
 
 ### Elements with javascript
 

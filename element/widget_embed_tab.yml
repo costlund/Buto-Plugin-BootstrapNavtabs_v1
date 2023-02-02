@@ -5,6 +5,7 @@ attribute:
 innerHTML:
   -
     type: a
+    settings: tab:settings
     attribute:
       class: nav-link
       href: '#'

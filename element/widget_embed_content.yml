@@ -1,4 +1,5 @@
 type: div
+settings: content:settings
 attribute:
   id: content:id
   data-url: content:data-url

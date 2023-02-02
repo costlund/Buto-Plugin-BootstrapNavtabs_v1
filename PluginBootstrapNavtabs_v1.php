@@ -29,7 +29,7 @@ class PluginBootstrapNavtabs_v1{
     $tabs = array();
     foreach($data->get('data/item') as $k => $v){
       $tab = wfDocument::getElementFromFolder(__DIR__, __FUNCTION__.'_tab');
-      $tab->setByTag($v, 'tab');
+      $tab->setByTag($v, 'tab', true);
       $tabs[] = $tab->get();
     }
     $rs->set('tabs', $tabs);
