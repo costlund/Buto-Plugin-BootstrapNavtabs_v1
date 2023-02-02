@@ -15,6 +15,27 @@ data:
 
 ## Usage
 
+### Widget
+
+```
+type: widget
+data:
+  plugin: bootstrap/navtabs_v1
+  method: embed
+  data:
+    id: my_navtabs (mandatory)
+    item: (mandatory)
+      -
+        text: Home (mandatory)
+        id: (optional, set this (to be able to update div) or a random will be set)
+        data-url: (optinal, set this to make an ajax request on tab click)
+        data-onclick: (optional, call a method on tab click)
+        content: (optional, elements)
+```
+
+
+### Elements with javascript
+
 Change id of my_navtabs and my_content. In my_content DIV set any id and a proper data-url.
 
 ```

@@ -1,0 +1,8 @@
+type: div
+attribute:
+  id: content:id
+  data-url: content:data-url
+  data-onclick: content:data-onclick
+  class: plugin_bootstrap_navtabs_content
+  style: 'display:none'
+innerHTML: content:content

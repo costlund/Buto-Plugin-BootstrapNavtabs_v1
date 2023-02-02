@@ -1,0 +1,11 @@
+type: li
+attribute:
+  class: nav-item
+  role: presentation
+innerHTML:
+  -
+    type: a
+    attribute:
+      class: nav-link
+      href: '#'
+    innerHTML: tab:text

@@ -1,0 +1,16 @@
+-
+  type: ul
+  attribute:
+    class: 'nav nav-tabs'
+    id: rs:tabs_id
+    role: tablist
+  innerHTML: rs:tabs
+-
+  type: div
+  attribute:
+    style: 'margin-top:20px;min-height:300px'
+    id: rs:contents_id
+  innerHTML: rs:contents
+-
+  type: script
+  innerHTML: rs:script

@@ -1,5 +1,9 @@
-version: 1.4.0
+version: 1.5.0
 history:
+  1.5.0:
+    date: '2023-02-02'
+    title: 'Widget embed'
+    description: 'Add widget embed.'
   1.4.0:
     date: '2023-02-01'
     title: 'Last tab'
