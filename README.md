@@ -120,7 +120,12 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
 
 
 ## Tab click
-Script to click on a tab.
+Script to click on a tab initially.
 ```
 PluginBootstrapNavtabs_v1.tab_click('_id_of_nav_tabs_', _tab_number_);
+```
+If used multiple times one must add force param.
+```
+var force = true;
+PluginBootstrapNavtabs_v1.tab_click('_id_of_nav_tabs_', _tab_number_, force);
 ```

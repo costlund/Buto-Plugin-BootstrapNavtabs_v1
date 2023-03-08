@@ -78,11 +78,11 @@ function PluginBootstrapNavtabs_v1(){
   this.onclick_example = function(){
     alert('PluginBootstrapNavtabs_v1 says: Replace method PluginBootstrapNavtabs_v1.onclick_example() or remove param data-onclick.');
   }
-  this.tab_click = function(ul_id, tab_number){
+  this.tab_click = function(ul_id, tab_number, force){
     /**
      * If data.nav is set.
      */
-    if(PluginBootstrapNavtabs_v1.data.nav[ul_id]){
+    if(!force && PluginBootstrapNavtabs_v1.data.nav[ul_id]){
       tab_number = PluginBootstrapNavtabs_v1.data.nav[ul_id];
     }
     /**
