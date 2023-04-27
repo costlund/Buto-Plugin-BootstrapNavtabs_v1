@@ -113,9 +113,17 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
         style: 'display:none'
         data-onclick: PluginBootstrapNavtabs_v1.onclick_example()
       innerHTML: This content is static.
+```
+
+## Tab init
+Init method.
+```
 -
   type: script
-  innerHTML: "PluginBootstrapNavtabs_v1.nav_init({ul: 'my_navtabs', content: 'my_content', click: 0});"
+  innerHTML: |
+    $( document ).ready(function() {
+      PluginBootstrapNavtabs_v1.nav_init({ul: 'my_navtabs', content: 'my_content', click: 0});
+    });
 ```
 
 
