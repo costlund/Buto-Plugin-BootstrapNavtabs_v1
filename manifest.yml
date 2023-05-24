@@ -1,5 +1,9 @@
-version: 1.7.2
+version: 1.8.0
 history:
+  1.8.0:
+    date: '2023-05-24'
+    title: Tab
+    description: 'Set tab settings.'
   1.7.2:
     date: '2023-04-27'
     title: Readme

@@ -1,4 +1,5 @@
 type: li
+settings: tab:settings
 attribute:
   class: nav-item
   role: presentation
