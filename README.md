@@ -35,6 +35,12 @@ data:
           enabled: true
 ```
 
+#### data-url
+Replace in string from request params.
+```
+        data-url: '/my/page?id=[id]'
+```
+
 ### Elements with javascript
 
 Change id of my_navtabs and my_content. In my_content DIV set any id and a proper data-url.

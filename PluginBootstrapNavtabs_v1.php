@@ -11,6 +11,18 @@ class PluginBootstrapNavtabs_v1{
      */
     $data = new PluginWfArray($data);
     /**
+     * data-url replace from request
+     */
+    if(wfRequest::getAll()){
+      foreach($data->get('data/item') as $k1 => $v1){
+        if($data->get("data/item/$k1/data-url")){
+          foreach(wfRequest::getAll() as $k2 => $v2){
+            $data->set("data/item/$k1/data-url", str_replace("[$k2]", $v2, $data->get("data/item/$k1/data-url")));
+          }
+        }
+      }
+    }
+    /**
      * 
      */
     $rs = new PluginWfArray();
