@@ -1,5 +1,9 @@
-version: 1.9.1
+version: 1.9.2
 history:
+  1.9.2:
+    date: '2023-09-27'
+    title: Versions
+    description: 'Versions update.'
   1.9.1:
     date: '2023-09-11'
     title: Versions
@@ -59,10 +63,10 @@ history:
 plugin:
   -
     name: wf/embed
-    version: 1.3.0
+    version: 1.3.1
   -
     name: wf/ajax
-    version: 1.4.2
+    version: 1.6.2
 sys:
   -
     name: mercury
