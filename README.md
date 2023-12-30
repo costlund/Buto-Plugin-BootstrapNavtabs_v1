@@ -1,29 +1,34 @@
 # Buto-Plugin-BootstrapNavtabs_v1
 
-Bootstrap 4 navtabs.
+<p>Bootstrap 4 navtabs.</p>
 
-## Include
+<a name="key_0"></a>
 
-Include in head.
+## Widgets
 
-```
-type: widget
+
+
+<a name="key_0_0"></a>
+
+### include
+
+<p>Include in head.</p>
+<pre><code>type: widget
 data:
   plugin: bootstrap/navtabs_v1
-  method: include
-```
+  method: include</code></pre>
 
-## Usage
+<a name="key_0_1"></a>
 
-### Widget
+### embed
 
-```
-type: widget
+<pre><code>type: widget
 data:
   plugin: bootstrap/navtabs_v1
   method: embed
   data:
     id: my_navtabs (mandatory)
+    click: The init tab, default 0 (optional)
     item: (mandatory)
       -
         text: Home (mandatory)
@@ -32,21 +37,18 @@ data:
         data-onclick: (optional, call a method on tab click)
         content: (optional, elements)
         settings: (optional)
-          enabled: true
-```
+          enabled: true</code></pre>
+<p>data-url
+Replace in string from request params.</p>
+<pre><code>        data-url: '/my/page?id=[id]'</code></pre>
 
-#### data-url
-Replace in string from request params.
-```
-        data-url: '/my/page?id=[id]'
-```
+<a name="key_1"></a>
 
-### Elements with javascript
+## Javascript
 
-Change id of my_navtabs and my_content. In my_content DIV set any id and a proper data-url.
-
-```
--
+<p>Elements with javascript</p>
+<p>Change id of my_navtabs and my_content. In my_content DIV set any id and a proper data-url.</p>
+<pre><code>-
   type: ul
   attribute:
     class: 'nav nav-tabs'
@@ -118,28 +120,19 @@ Change id of my_navtabs and my_content. In my_content DIV set any id and a prope
         class: plugin_bootstrap_navtabs_content
         style: 'display:none'
         data-onclick: PluginBootstrapNavtabs_v1.onclick_example()
-      innerHTML: This content is static.
-```
-
-## Tab init
-Init method.
-```
--
+      innerHTML: This content is static.</code></pre>
+<p>Tab init
+Init method.</p>
+<pre><code>-
   type: script
   innerHTML: |
     $( document ).ready(function() {
       PluginBootstrapNavtabs_v1.nav_init({ul: 'my_navtabs', content: 'my_content', click: 0});
-    });
-```
+    });</code></pre>
+<p>Tab click
+Script to click on a tab initially.</p>
+<pre><code>PluginBootstrapNavtabs_v1.tab_click('_id_of_nav_tabs_', _tab_number_);</code></pre>
+<p>If used multiple times one must add force param.</p>
+<pre><code>var force = true;
+PluginBootstrapNavtabs_v1.tab_click('_id_of_nav_tabs_', _tab_number_, force);</code></pre>
 
-
-## Tab click
-Script to click on a tab initially.
-```
-PluginBootstrapNavtabs_v1.tab_click('_id_of_nav_tabs_', _tab_number_);
-```
-If used multiple times one must add force param.
-```
-var force = true;
-PluginBootstrapNavtabs_v1.tab_click('_id_of_nav_tabs_', _tab_number_, force);
-```

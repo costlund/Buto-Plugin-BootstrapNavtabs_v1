@@ -1,5 +1,9 @@
-version: 1.9.2
+version: 1.9.3
 history:
+  1.9.3:
+    date: '2023-12-30'
+    title: Click
+    description: 'Add click param to widget embed.'
   1.9.2:
     date: '2023-09-27'
     title: Versions

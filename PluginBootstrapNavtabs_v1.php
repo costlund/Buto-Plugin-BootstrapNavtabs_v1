@@ -11,6 +11,12 @@ class PluginBootstrapNavtabs_v1{
      */
     $data = new PluginWfArray($data);
     /**
+     * click
+     */
+    if(!$data->get('data/click')){
+      $data->set('data/click', 0);
+    }
+    /**
      * data-url replace from request
      */
     if(wfRequest::getAll()){
@@ -62,7 +68,7 @@ class PluginBootstrapNavtabs_v1{
     /**
      * script
      */
-    $rs->set('script', "PluginBootstrapNavtabs_v1.nav_init({ul: '".$rs->get('tabs_id')."', content: '".$rs->get('contents_id')."', click: 0})");
+    $rs->set('script', "PluginBootstrapNavtabs_v1.nav_init({ul: '".$rs->get('tabs_id')."', content: '".$rs->get('contents_id')."', click: ".$data->get('data/click')."})");
     /**
      * 
      */
