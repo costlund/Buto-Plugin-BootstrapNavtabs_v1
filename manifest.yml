@@ -1,5 +1,9 @@
-version: 1.9.3
+version: 1.9.4
 history:
+  1.9.4:
+    date: '2024-01-05'
+    title: Document ready
+    description: 'Add document ready method to widget embed.'
   1.9.3:
     date: '2023-12-30'
     title: Click

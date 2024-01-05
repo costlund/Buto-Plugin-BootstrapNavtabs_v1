@@ -68,7 +68,7 @@ class PluginBootstrapNavtabs_v1{
     /**
      * script
      */
-    $rs->set('script', "PluginBootstrapNavtabs_v1.nav_init({ul: '".$rs->get('tabs_id')."', content: '".$rs->get('contents_id')."', click: ".$data->get('data/click')."})");
+    $rs->set('script', "$( document ).ready(function() { PluginBootstrapNavtabs_v1.nav_init({ul: '".$rs->get('tabs_id')."', content: '".$rs->get('contents_id')."', click: ".$data->get('data/click')."});  });");
     /**
      * 
      */
