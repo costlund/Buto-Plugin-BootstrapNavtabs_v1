@@ -146,3 +146,7 @@ readme:
         var force = true;
         PluginBootstrapNavtabs_v1.tab_click('_id_of_nav_tabs_', _tab_number_, force);
         ```
+        Update tab.
+        ```
+        PluginBootstrapNavtabs_v1.tab_update({ul: '_id_of_nav_tabs_'});
+        ```

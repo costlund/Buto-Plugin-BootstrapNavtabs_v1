@@ -1,5 +1,9 @@
-version: 1.9.4
+version: 1.10.0
 history:
+  1.10.0:
+    date: '2024-10-29'
+    title: Update tab
+    description: 'Add method tab_update.'
   1.9.4:
     date: '2024-01-05'
     title: Document ready

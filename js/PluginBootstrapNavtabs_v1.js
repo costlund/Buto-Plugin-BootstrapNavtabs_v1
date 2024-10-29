@@ -90,5 +90,8 @@ function PluginBootstrapNavtabs_v1(){
      */
     document.getElementById(ul_id).getElementsByClassName('nav-link')[tab_number].click();
   }
+  this.tab_update = function(data){
+    this.tab_click(data.ul, this.data.nav[data.ul], true);
+  }
 }
 var PluginBootstrapNavtabs_v1 = new PluginBootstrapNavtabs_v1();
