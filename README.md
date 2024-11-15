@@ -135,4 +135,6 @@ Script to click on a tab initially.</p>
 <p>If used multiple times one must add force param.</p>
 <pre><code>var force = true;
 PluginBootstrapNavtabs_v1.tab_click('_id_of_nav_tabs_', _tab_number_, force);</code></pre>
+<p>Update tab.</p>
+<pre><code>PluginBootstrapNavtabs_v1.tab_update({ul: '_id_of_nav_tabs_'});</code></pre>
 
