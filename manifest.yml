@@ -1,5 +1,9 @@
-version: 1.10.0
+version: 1.10.1
 history:
+  1.10.1:
+    date: '2025-05-10'
+    title: Tab click
+    description: 'Handle if element not exist in method tab_click.'
   1.10.0:
     date: '2024-10-29'
     title: Update tab
